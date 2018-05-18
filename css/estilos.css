@@ -109,8 +109,18 @@
     to { bottom:0px; opacity:1 }
   }
   
-  @keyframes animatebottom { 
+  @keyframes animatebottom {   
     from{ bottom:-100px; opacity:0 } 
     to{ bottom:0; opacity:1 }
   }
 
+  .cuadro_imagen_receta{
+    margin-left: 40%;
+    width: 60px;
+    height: 60px;
+    border: solid #000 1px;
+  }
+  .imagen_receta{
+    width: 60px;
+    height: 60px;
+  }
