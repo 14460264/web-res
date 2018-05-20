@@ -1,3 +1,7 @@
+<?php
+	 //print_r($receta);
+	$imagen=1;
+?>
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 <head>
@@ -27,6 +31,7 @@
 		<link rel="stylesheet" href="css/magnific-popup.css">
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/estilos.css">
 	</head>
 	<body>
 		<div class="main-wrapper-first">
@@ -86,6 +91,50 @@
 			<section class="featured-area">
 				<div class="container">
 					<div class="row">
+						<?php 
+						foreach ($receta as $key => $value) { 
+							//echo $value['nameRecipe']."<br>"; 
+						?>
+							<div class="col-md-4">
+								<div class="single-feature">
+									<div class="cuadro_imagen_receta">
+										<?php echo '<img class="imagen_receta" src="img/'.$imagen.'.jpg">';
+
+										?>
+									</div>
+									<div class="desc text-center">
+										<h6 class="title text-uppercase"><?php echo $value['nameRecipe']; ?></h6>
+										<p><?php echo $value['description']; ?></p>
+									</div>
+								</div>
+							</div>
+						<?php 
+						$imagen++;
+						}
+						?>
+						
+						<!--div class="col-md-4">
+							<div class="single-feature">
+								<div class="icon">
+									<span class="lnr lnr-code"></span>
+								</div>
+								<div class="desc text-center">
+									<h6 class="title text-uppercase">Clean Code</h6>
+									<p>Over 92% of computers are infected with Adware and spyware. Such software is rarely accompanied by uninstall utility </p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="single-feature">
+								<div class="icon">
+									<span class="lnr lnr-clock"></span>
+								</div>
+								<div class="desc text-center">
+									<h6 class="title text-uppercase">Punctuality</h6>
+									<p>If you own an Iphone, you’ve probably already worked out how much fun it is to use it to watch movies-it has that nice big screen</p>
+								</div>
+							</div>
+						</div>
 						<div class="col-md-4">
 							<div class="single-feature">
 								<div class="icon">
@@ -118,40 +167,7 @@
 									<p>If you own an Iphone, you’ve probably already worked out how much fun it is to use it to watch movies-it has that nice big screen</p>
 								</div>
 							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="single-feature">
-								<div class="icon">
-									<span class="lnr lnr-sun"></span>
-								</div>
-								<div class="desc text-center">
-									<h6 class="title text-uppercase">Stunning Visuals</h6>
-									<p>Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola, body</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="single-feature">
-								<div class="icon">
-									<span class="lnr lnr-code"></span>
-								</div>
-								<div class="desc text-center">
-									<h6 class="title text-uppercase">Clean Code</h6>
-									<p>Over 92% of computers are infected with Adware and spyware. Such software is rarely accompanied by uninstall utility </p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="single-feature">
-								<div class="icon">
-									<span class="lnr lnr-clock"></span>
-								</div>
-								<div class="desc text-center">
-									<h6 class="title text-uppercase">Punctuality</h6>
-									<p>If you own an Iphone, you’ve probably already worked out how much fun it is to use it to watch movies-it has that nice big screen</p>
-								</div>
-							</div>
-						</div>
+						</div-->
 					</div>
 				</div>
 			</section>
