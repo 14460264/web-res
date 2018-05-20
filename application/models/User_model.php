@@ -6,14 +6,14 @@ class User_model extends CI_model{
 public function register_user($user){
 
 
-$this->db->insert('user', $user);
+$this->db->insert('userapp', $user);
 
 }
 
 public function login_user($email,$password){
 
   $this->db->select('*');
-  $this->db->from('user');
+  $this->db->from('userapp');
   $this->db->where('email',$email);
   $this->db->where('password',$password);
 
@@ -30,7 +30,7 @@ public function login_user($email,$password){
 public function email_check($email){
 
   $this->db->select('*');
-  $this->db->from('user');
+  $this->db->from('userapp');
   $this->db->where('email',$email);
   $query=$this->db->get();
 

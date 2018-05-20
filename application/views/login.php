@@ -65,10 +65,11 @@
                     <?php
                   }
                   ?>
+
                 </center>
                 <div class="panel-body">
                 <center>
-                    <form role="form" method="post" action="<?php echo base_url('user/login_user'); ?>"> 
+                    <form role="form" method="post" action="<?php echo base_url('index.php/user/login_user'); ?>"> 
                         <div class="d-flex  justify-content-center">
                         <fieldset>
                        
@@ -79,13 +80,13 @@
                             <div class="form-group">
                                 <input class="form-control" placeholder="Contraseña" name="password" type="password" value="" required>
                             </div>
-                                <input class="primary-btn d-inline-flex align-items-center" type="submit" value="login" name="login" >
+                                <input class="primary-btn d-inline-flex align-items-center" style="color:white;" type="submit" value="login" name="login" >
 
                         </fieldset>
                         </div>
                     </form>
                     <br>
-                <a href="<?php echo base_url('index.php/user/login_view');?>" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Registrarse</span><span class="lnr lnr-arrow-right"></span></a>
+                <a href="<?php echo base_url('index.php/user/registro'); ?>" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Registrarse</span><span class="lnr lnr-arrow-right"></span></a>
                 </center>
 
                </div>

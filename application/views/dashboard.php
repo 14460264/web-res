@@ -35,13 +35,13 @@
 					<div class="header-wrap">
 						<div class="header-top d-flex justify-content-between align-items-center">
 							<div class="logo">
-								<a href="#"><img src="img/logo1.png" style="width:50%;" alt=""></a>
+								<a href="http://127.0.0.1:8080/tryn2/tryn/index.php"><img src="img/logo1.png" style="width:50%;" alt=""></a>
 							</div>
 							<div class="main-menubar d-flex align-items-center">
 								<nav class="hide">
 									<a href="index.html">Inicio</a>
 									<a href="generic.html">Recetas</a>
-									<a href="elements.html">Ingresar</a>
+									<a href="<?php echo base_url('index.php/user/login_view');?>">Ingresar</a>
 								</nav>
 								<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
 							</div>
@@ -57,7 +57,7 @@
 						<div class="content">
 							<h1 class="text-white text-uppercase">Porque comprar comida ? <br> Cuando puedes hacerla tú mismo.</h1>
 							<p class="text-white"><!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  <br>incididunt ut labore et dolore magna aliqua.--></p>
-							<a href="<?php echo base_url('index.php/user/login_view');?>" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Registrarse</span><span class="lnr lnr-arrow-right"></span></a>
+							<a href="<?php echo base_url('index.php/user/registro'); ?>" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Registrarse</span><span class="lnr lnr-arrow-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -66,7 +66,7 @@
 						<div class="content">
 							<h1 class="text-white text-uppercase">¿Qué vas a cocinar hoy? <br></h1>
 							<p class="text-white"><!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  <br>incididunt ut labore et dolore magna aliqua.--></p>
-							<a href="<?php echo base_url('index.php/user/login_view');?>" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Registrarse</span><span class="lnr lnr-arrow-right"></span></a>
+							<a href="<?php echo base_url('index.php/user/registro'); ?>" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Registrarse</span><span class="lnr lnr-arrow-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -75,7 +75,7 @@
 						<div class="content">
 							<h1 class="text-white text-uppercase">Una receta no tiene alma. Es el cocinero quien debe darle alma a la receta <br> - Thomas Keller</h1>
 							<p class="text-white"><!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  <br>incididunt ut labore et dolore magna aliqua.--></p>
-							<a href="<?php echo base_url('index.php/user/login_view');?>" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Registrarse</span><span class="lnr lnr-arrow-right"></span></a>
+							<a href="<?php echo base_url('index.php/user/registro'); ?>" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Registrarse</span><span class="lnr lnr-arrow-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -261,10 +261,10 @@
 				<div class="container">
 					<div class="total-brand d-flex justify-content-around">
 						<img src="img/b1.png" alt="">
-						<img src="img/b2.png" alt="">
+						<!--<img src="img/b2.png" alt="">
 						<img src="img/b3.png" alt="">
 						<img src="img/b4.png" alt="">
-						<img src="img/b5.png" alt="">
+						<img src="img/b5.png" alt="">-->
 					</div>
 				</div>
 			</div>
