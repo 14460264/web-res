@@ -39,9 +39,9 @@
               </div>
               <div class="main-menubar d-flex align-items-center">
                 <nav class="hide">
-                  <a href="index.html">Inicio</a>
+                  <a href="<?php echo base_url('index.php/user/perfil_inicio');?>">Inicio</a>
                   <a href="generic.html">Recetas</a>
-                  <a href="<?php echo base_url('index.php/user/login_view');?>">Agregar</a>
+                  <a href="<?php echo base_url('index.php/user/agregar');?>">Agregar</a>
                   <a href="<?php echo base_url('index.php/user/vista_perfil');?>">Perfil</a>
                   <a href="<?php echo base_url('index.php/user/user_logout');?>">Salir</a>
                 </nav>
@@ -72,7 +72,7 @@
               
             </div>
             <div class="item">
-              <div class="thumb" style="background: url(../../img/g8.jpg);"></div>
+              <div class="thumb" style="background: url(../../img/nuevas/tablet.jpg);"></div>
             
             </div>
             <div class="item">
@@ -80,7 +80,7 @@
              
             </div>
             <div class="item">
-              <div class="thumb" style="background: url(../../img/chef.jpg);"></div>
+              <div class="thumb" style="background: url(../../img/nuevas/chile.jpg);"></div>
              
             </div>
             <div class="item">

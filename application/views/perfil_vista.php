@@ -41,9 +41,9 @@
               </div>
               <div class="main-menubar d-flex align-items-center">
                 <nav class="hide">
-                  <a href="index.html">Inicio</a>
+                  <a href="<?php echo base_url('index.php/user/perfil_inicio');?>">Inicio</a>
                   <a href="generic.html">Recetas</a>
-                  <a href="<?php echo base_url('index.php/user/login_view');?>">Agregar</a>
+                  <a href="<?php echo base_url('index.php/user/agregar');?>">Agregar</a>
                   <a href="<?php echo base_url('index.php/user/vista_perfil');?>">Perfil</a>
                   <a href="<?php echo base_url('index.php/user/user_logout');?>">Salir</a>
                 </nav>
@@ -71,13 +71,15 @@
 
     <!-- Grid column -->
     <div class="col-lg-5 text-center text-lg-left content">
+
       <center>
+       <br><br>
       <img  class="img-fluid " src="../../img/perfil.png" style="width:20%;" alt="perfil">
         <!-- Section heading -->
       <h2 class="h1-responsive font-weight-bold text-center my-5"><?php echo $_SESSION['name']; ?></h2>
 
   <!-- Section description -->
-      <p class="lead grey-text text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      <p class="lead grey-text text-center w-responsive mx-auto mb-5"><?php echo $_SESSION['email']; ?></p>
       </center>
     </div>
     <!-- Grid column -->
@@ -96,8 +98,15 @@
 
         <!-- Grid column -->
         <div class="col-xl-10 col-md-11 col-10">
-          <h5 class="font-weight-bold mb-3">Safety</h5>
-          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
+          <h5 class="font-weight-bold mb-3">Todas</h5>
+          <p class="grey-text">fcsdsdvs</p>
+          <!--inicio-->
+          <label class="switch">
+           <input type="checkbox" name="">
+           <span class="slider round"></span>
+           </label>
+    
+
         </div>
         <!-- Grid column -->
 
@@ -115,7 +124,7 @@
 
         <!-- Grid column -->
         <div class="col-xl-10 col-md-11 col-10">
-          <h5 class="font-weight-bold mb-3">Technology</h5>
+          <h5 class="font-weight-bold mb-3">Baja</h5>
           <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
         </div>
         <!-- Grid column -->
@@ -134,14 +143,31 @@
 
         <!-- Grid column -->
         <div class="col-xl-10 col-md-11 col-10">
-          <h5 class="font-weight-bold mb-3">Finance</h5>
+          <h5 class="font-weight-bold mb-3">Media</h5>
           <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
         </div>
         <!-- Grid column -->
 
       </div>
       <!--Grid row-->
+  <!--Grid row-->
+      <div class="row">
 
+        <!-- Grid column -->
+        <div class="col-1">
+          <i class="fa fa-mail-forward fa-lg indigo-text"></i>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-xl-10 col-md-11 col-10">
+          <h5 class="font-weight-bold mb-3">Dificil</h5>
+          <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!--Grid row-->
     </div>
     <!--Grid column-->
 

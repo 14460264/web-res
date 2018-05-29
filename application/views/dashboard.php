@@ -46,13 +46,16 @@
 							</div>
 							<div class="main-menubar d-flex align-items-center">
 								<nav class="hide">
-									<a href="index.html">Inicio</a>
-									<a href="generic.html">Recetas</a>
+								
 									<a href="<?php echo base_url('index.php/user/login_view');?>">Ingresar</a>
 								</nav>
 								<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
 							</div>
 		</div>
+		</div>
+		</div>
+		
+		</header>
 		<div class="main-wrapper">
 			<div class="active-banner-slider">
 				<div class="item d-flex align-items-center">
@@ -60,14 +63,14 @@
 						<div class="content">
 							<h1 class="text-white text-uppercase">Porque comprar comida ? <br> Cuando puedes hacerla tú mismo.</h1>
 							<p class="text-white"><!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  <br>incididunt ut labore et dolore magna aliqua.--></p>
-							<a href="<?php echo base_url('index.
+							<a href="<?php echo base_url('index.php/user/registro'); ?>" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Registrarse</span><span class="lnr lnr-arrow-right"></span>
 						</div>
 					</div>
 				</div>
-			</header>php/user/registro'); ?>" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Registrarse</span><span class="lnr lnr-arrow-right"></span></a>
-						</div>
-					</div>
-				</div>
+			
+						
+			</div>
+	
 				<div class="item d-flex align-items-center">
 					<div class="container">
 						<div class="content">
@@ -87,7 +90,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+
 		<div class="main-wrapper">
 			<!-- Start Feature Area -->
 			<section class="featured-area">

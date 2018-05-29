@@ -41,7 +41,7 @@ $this->load->view('register.php');
       'password'=>sha1($this->input->post('password')),
 
         );
-        print_r($user);
+  
 
 $email_check=$this->user_model->email_check($user['email']);
 
@@ -75,7 +75,7 @@ function login_user(){
   'password'=>sha1($this->input->post('password'))
 
     );
-echo $name;
+
     $data=$this->user_model->login_user($user_login['email'],$user_login['password']);
       if($data)
       {
@@ -84,12 +84,12 @@ echo $name;
         $this->session->set_userdata('name',$data['name']);
  
 
-       // $this->load->view("perfil.php");
+       $this->load->view("perfil.php");
 
       }
       else{
         $this->session->set_flashdata('error_msg', 'Error occured,Try again.');
-       // $this->load->view("login.php");
+       $this->load->view("login.php");
 
       }
 
@@ -120,9 +120,14 @@ $this->load->view('perfil_vista.php');
 
   public function list(){
     $res=$this->user_model->getRecipe();
-    if($res){
-      $this->load->view();
+      if($res){
+        $this->load->view();
+    }
+  }
+ function agregar(){
+    $this->load->view('agregar.php');
   }
 }
-}
 ?>
+
+

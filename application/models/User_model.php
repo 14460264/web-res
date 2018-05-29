@@ -28,7 +28,7 @@ public function login_user($email,$password){
 
   public function email_check($email){
     $this->db->select('*');
-    $this->db->from('user');
+    $this->db->from('userapp');
     $this->db->where('email',$email);
     $query=$this->db->get();
 
