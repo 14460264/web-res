@@ -52,10 +52,6 @@
 								</nav>
 								<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</header>
 		</div>
 		<div class="main-wrapper">
 			<div class="active-banner-slider">
@@ -64,7 +60,11 @@
 						<div class="content">
 							<h1 class="text-white text-uppercase">Porque comprar comida ? <br> Cuando puedes hacerla tú mismo.</h1>
 							<p class="text-white"><!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  <br>incididunt ut labore et dolore magna aliqua.--></p>
-							<a href="<?php echo base_url('index.php/user/registro'); ?>" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Registrarse</span><span class="lnr lnr-arrow-right"></span></a>
+							<a href="<?php echo base_url('index.
+						</div>
+					</div>
+				</div>
+			</header>php/user/registro'); ?>" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Registrarse</span><span class="lnr lnr-arrow-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -180,15 +180,15 @@
 					<div class="row align-items-center">
 						<div class="col-lg-3">
 							<div class="story-title">
-								<h3 class="text-white">Our Untold Story</h3>
-								<span class="text-uppercase text-white">Re-imagining the way</span>
+							
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="story-box">
-								<h6 class="text-uppercase">From the part of beginning</h6>
-								<p>Usage of the Internet is becoming more common due to rapid advancement of technology and the power of globalization. Societies are becoming more inter-connected. Thoughts from different</p>
-								<a href="#" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Get Started</span><span class="lnr lnr-arrow-right"></span></a>
+								<h6 class="text-uppercase">¡ Pon a prueba tus conocimientos culinarios!</h6>
+								<p>Explora las diversas recetas que tenemos para ti, cocina para esa persona especial o 
+								simplemente experimenta, prueba o descubre lo que la comunidad te sugiere ...</p>
+								
 							</div>
 						</div>
 					</div>
@@ -203,8 +203,7 @@
 					<div class="row justify-content-center">
 						<div class="col-lg-8">
 							<div class="section-title text-center">
-								<h3>Our Amazing Works</h3>
-								<span class="text-uppercase">Re-imagining the way</span>
+								
 							</div>
 						</div>
 					</div>
@@ -212,7 +211,7 @@
 						<div class="item">
 							<div class="thumb" style="background: url(img/c1.jpg);"></div>
 							<div class="caption text-center">
-								<h6 class="text-uppercase">Vector Illustration</h6>
+								<h6 class="text-uppercase">¿No tienes idea de que comer?</h6>
 								<p>LCD screens are uniquely modern in style, and the liquid crystals <br> that make them work have allowed humanity to</p>
 							</div>
 						</div>
