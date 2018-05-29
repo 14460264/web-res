@@ -32,6 +32,8 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/estilos.css">
+	
+
 	</head>
 	<body>
 		<div class="main-wrapper-first">
@@ -252,21 +254,20 @@
 					<div class="row align-items-center">
 						<div class="col-lg-3">
 							<div class="story-title sm-show text-center">
-								<h3 class="text-white">Our Untold Story</h3>
-								<span class="text-uppercase text-white">Re-imagining the way</span>
+							
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="story-box">
-								<h6 class="text-uppercase">From the part of beginning</h6>
-								<p>Usage of the Internet is becoming more common due to rapid advancement of technology and the power of globalization. Societies are becoming more inter-connected. Thoughts from different</p>
-								<a href="#" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Get Started</span><span class="lnr lnr-arrow-right"></span></a>
+								<h6 class="text-uppercase">
+								Aprende a cocinar de manera fácil y rápida, pero sobre todo sin comprar nada.</h6>
+								<a href="#" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Registrarse</span><span class="lnr lnr-arrow-right"></span></a>
 							</div>
 						</div>
 						<div class="col-lg-3">
 							<div class="story-title sm-hide text-right">
-								<h3 class="text-white">Our Untold Story</h3>
-								<span class="text-uppercase text-white">Re-imagining the way</span>
+								<h3 class="text-white">Únete a nosotros</h3>
+								
 							</div>
 						</div>
 					</div>
@@ -275,12 +276,14 @@
 			<!-- End Story Area -->
 			<div class="brand-area">
 				<div class="container">
-					<div class="total-brand d-flex justify-content-around">
-						<img src="img/b1.png" alt="">
+					<div class="total-brand justify-content-around" >
+					<center>
+						<img src="img/nuevas/tec.png" alt="">
 						<!--<img src="img/b2.png" alt="">
 						<img src="img/b3.png" alt="">
 						<img src="img/b4.png" alt="">
 						<img src="img/b5.png" alt="">-->
+						</center>
 					</div>
 				</div>
 			</div>

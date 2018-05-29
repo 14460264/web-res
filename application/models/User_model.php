@@ -19,30 +19,12 @@ public function login_user($email,$password){
   if($query=$this->db->get())
   {
       return $query->row_array();
-
-  public function register_user($user){
-    $this->db->insert('user', $user);
-
-  }
-
-  public function login_user($email,$password){
-    $this->db->select('*');
-    $this->db->from('user');
-    $this->db->where('email',$email);
-    $this->db->where('password',$password);
-
-    if($query=$this->db->get())    {
-        return $query->row_array();
-    } else{
+  } else{
       return false;
-    }
   }
+}
 
 
-  $this->db->select('*');
-  $this->db->from('userapp');
-  $this->db->where('email',$email);
-  $query=$this->db->get();
 
   public function email_check($email){
     $this->db->select('*');
