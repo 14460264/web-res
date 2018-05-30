@@ -2,27 +2,8 @@
 class User_model extends CI_model{
 
 
-public function register_user($user){
-
-
-$this->db->insert('userapp', $user);
-
-}
-
-public function login_user($email,$password){
-
-  $this->db->select('*');
-  $this->db->from('userapp');
-  $this->db->where('email',$email);
-  $this->db->where('password',$password);
-
-  if($query=$this->db->get())
-  {
-      return $query->row_array();
-
   public function register_user($user){
-    $this->db->insert('user', $user);
-
+    $this->db->insert('userapp', $user);
   }
 
   public function login_user($email,$password){
@@ -38,12 +19,6 @@ public function login_user($email,$password){
     }
   }
 
-
-  $this->db->select('*');
-  $this->db->from('userapp');
-  $this->db->where('email',$email);
-  $query=$this->db->get();
-
   public function email_check($email){
     $this->db->select('*');
     $this->db->from('user');
@@ -57,20 +32,6 @@ public function login_user($email,$password){
       return true;
     }
   }
-
-  public function getCatalogosErrores(){
-    $this->db->select('*');
-    $this->db->from('c_error');
-    $query=$this->db->get();
-  
-    if($query->num_rows()>0){
-      return $query->row();
-    }else{
-      return true;
-    }
-  }
-
-
 
   public function getRecipe(){
     $data=array();
@@ -87,5 +48,45 @@ public function login_user($email,$password){
     return $this->db->get()->result_array();*/
 
   }
+
+  public function cuenta(){
+    $data=array();
+    $this->db->select('*');
+    $this->db->from('recipe');
+    return $this->db->get()->result_array();
+  }
+
+  public function ingredientes(){
+    $ing=array();
+    $this->db->select('*');
+    $this->db->from('listingredients');
+    return $this->db->get()->result_array();
+  }
+
+  function grabaReceta($datos){
+    $this->db->insert('recipe',$datos);
+  }
+
+  public function datos_receta_lista(){
+    $data=array();
+    $this->db->select('*');
+    $this->db->from('recipe');
+    $this->db->join('listdificult','recipe.idDificult = listdificult.idCategoryDif');
+    $this->db->join('listcategory','recipe.idCategory = listcategory.idCategoryFood');
+    $this->db->order_by('idRecipe','asc');
+    return $this->db->get()->result_array();
+  } 
+
+  public function detalles_receta($datos){
+    $data=array();
+    $this->db->select('*');
+    $this->db->from('recipe');
+    $this->db->join('recipedetails','recipe.idRecipe = recipedetails.idRecipeD');
+    $this->db->join('listdificult','recipe.idDificult = listdificult.idCategoryDif');
+    $this->db->join('listcategory','recipe.idCategory = listcategory.idCategoryFood');
+    $this->db->order_by('idRecipe','asc');
+    return $this->db->get()->result_array();
+  }
+
 }
 ?>

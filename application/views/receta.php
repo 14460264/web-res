@@ -1,3 +1,13 @@
+<?php  
+  $x=count($recetas);
+  $z=count($ing);
+   //print_r($x);
+   $y=$x+1;
+   /*print_r($recetas);
+   print_r($ing);*/
+   $i=1;
+?>
+
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 <head>
@@ -71,29 +81,44 @@
                     <?php
                   }
                   ?>
-                      <form role="form" method="post" action="index.php/user/register_user">
+                      <form role="form" method="post" action="receta_nueva">
                         <div class="d-flex  justify-content-center">
                           <fieldset>
                               <div class="form-group">
-                                  <input class="form-control" placeholder="Nombre" name="name" type="text" autofocus>
+                                  <input class="form-control" name="idRecipe" type="hidden" value="<?php $y ?>">
+                                  <input class="form-control" placeholder="Nombre" name="nameRecipe" type="text" autofocus>
                               </div>
                               <div class="col form-group">
-                                <input type="text" class="form-control" name="apellidos" placeholder="Apellidos">
+                                <input type="text" class="form-control" name="time" placeholder="Tiempo">
                               </div>
- 
+                              <div class="col form-group" >
+                                <label>Categoría</label>
+                                <select class="form-control" name="category">
+                                  <option value="1">Fácil</option>
+                                  <option value="2">Medio</option>
+                                  <option value="3">Dificil</option>
+                                </select>
+                              </div>
                               <div class="form-group">
-                                  <input class="form-control" placeholder="Correo" name="email" type="email" autofocus>
+                                <?php 
+                                  foreach ($ing as $key => $value) { ?>
+                                    <input class="form-control" type="checkbox" name="ingredientes" value="<?php echo $value['idIngredient']; ?>"><?php echo $value['nameIngredient']; ?>
+                                    
+                                <?php  }
+                                ?>
+                              </div> 
+                              <div class="form-group">
+                                  <input class="form-control" placeholder="Pasos..." name="steps" type="text" autofocus>
                               </div>
                               <div class="form-group">
-                                  <input class="form-control" placeholder="Contraseña" name="password" type="password" value="">
+                                  <input class="form-control" placeholder="Descripción corta" name="description" type="text" value="">
                               </div>
-                              <input class="primary-btn d-inline-flex align-items-center" style="color:white" type="submit" value="Registrar" name="register" >
+                              <input class="primary-btn d-inline-flex align-items-center" style="color:white" type="submit" value="Agregar receta" name="register" >
 
                           </fieldset>
                           </div>  
                       </form>
                       <br>
-                    <a href="<?php echo base_url('index.php/user/login_view');?>" class="primary-btn d-inline-flex align-items-center"><span class="mr-10">Ingresar</span><span class="lnr lnr-arrow-right"></span></a>
                     </center>
                   </div>
 
