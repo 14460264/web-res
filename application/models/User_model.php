@@ -58,7 +58,7 @@ public function login_user($email,$password){
     $data=array();
     $this->db->select('*');
     $this->db->from('recipe');
-    $this->db->limit('5');
+    $this->db->limit('6');
     return $this->db->get()->result_array();
     /*
       obtiene la receta con su detalle de datos

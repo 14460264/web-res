@@ -6,6 +6,9 @@
 /* =================================== */
 /*  Basic Style 
 /* =================================== */
+
+
+
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #777777;
@@ -1905,7 +1908,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #49e3ce;
+  color: #f6f9bb;
 }
 
 body {
@@ -1978,13 +1981,13 @@ body:after {
 }
 
 .p1-gradient-bg,  .primary-btn:after, .banner-area, .active-banner-slider .item:before, .single-feature .icon:after, .single-generic-feature .icon:after, .story-area, .story-area-2, .footer-widget-area, .single-widget .icon:after, .footer-social a:after {
-  background-image: -moz-linear-gradient(135deg, #49e3ce 0%, #1541ef 100%);
-  background-image: -webkit-linear-gradient(135deg, #49e3ce 0%, #1541ef 100%);
-  background-image: -ms-linear-gradient(135deg, #49e3ce 0%, #1541ef 100%);
+  background-image: -moz-linear-gradient(135deg, #f6f9bb 0%, #754127 100%);
+  background-image: -webkit-linear-gradient(135deg, #f6f9bb 0%, #754127 100%);
+  background-image: -ms-linear-gradient(135deg, #f6f9bb 0%, #754127 100%);
 }
 
 .p1-gradient-color, .single-feature .icon span, .single-generic-feature .icon span {
-  background: -webkit-linear-gradient(0deg, #1541ef, #49e3ce);
+  background: -webkit-linear-gradient(0deg, #754127, #f6f9bb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2371,7 +2374,7 @@ body:after {
 }
 
 .active-works-carousel .owl-dots .owl-dot.active {
-  background: #49e3ce;
+  background: #f6f9bb;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -2443,7 +2446,7 @@ body:after {
 }
 
 .story-area .primary-btn .lnr {
-  color: #49e3ce;
+  color: #f6f9bb;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -2539,7 +2542,7 @@ body:after {
 }
 
 .story-area-2 .primary-btn .lnr {
-  color: #49e3ce;
+  color: #f6f9bb;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;

@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="../../css/magnific-popup.css">
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/main.css">
-
+     <link rel="stylesheet" href="../../css/estilos.css">
   </head>
   <body>
     <div class="main-wrapper">
@@ -56,130 +56,234 @@
     </div>
   
     <div class="main-wrapper">
- 
 
       <!-- Start Amazing Works Area -->
+      <section class="amazing-works-area">       
+        ​ <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>
+                    <!-- Grid column -->
+              <div class="col-lg-5 text-center text-lg-left content">
 
-      <section class="amazing-works-area">
-        
-<!-- Section: Features v.3 -->
-<section class="my-5">
+                <center>
+                 <br><br>
+                <img  class="img-fluid " src="../../img/perfil.png" style="width:20%;" alt="perfil">
+                  <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold text-center my-5"><?php echo $_SESSION['name']; ?></h2>
+
+            <!-- Section description -->
+                <p class="lead grey-text text-center w-responsive mx-auto mb-5"><?php echo $_SESSION['email']; ?></p>
+                </center>
+              </div>
+              </th>
+              <th>
+                       <!-- Grid column -->
+          <div class="select_box">
+              <!-- Grid column -->
+              <div class="col-lg-7">
+
+                <!-- Grid row -->
+                <div class="row mb-3">
+
+                  <!-- Grid column -->
+                  <div class="col-1">
+                    <i class="fa fa-mail-forward fa-lg indigo-text"></i>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-xl-10 col-md-11 col-10">
+                    <h5 class="font-weight-bold mb-3">Todas</h5>
+                    
+                    <!--inicio-->
+                    <label class="switch">
+                     <input type="checkbox" name="">
+                     <span class="slider round"></span>
+                    </label>
+              
+
+                  </div>
+                  <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+                <!-- Grid row -->
+                <div class="row mb-3">
+
+                  <!-- Grid column -->
+                  <div class="col-1">
+                    <i class="fa fa-mail-forward fa-lg indigo-text"></i>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-xl-10 col-md-11 col-10">
+                    <h5 class="font-weight-bold mb-3">Baja</h5>
+                   
+                     <label class="switch">
+                     <input type="checkbox" name="">
+                     <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+                <!--Grid row-->
+                <div class="row">
+
+                  <!-- Grid column -->
+                  <div class="col-1">
+                    <i class="fa fa-mail-forward fa-lg indigo-text"></i>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-xl-10 col-md-11 col-10">
+                    <h5 class="font-weight-bold mb-3">Media</h5>
+                   
+                     <label class="switch">
+                     <input type="checkbox" name="">
+                     <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <!-- Grid column -->
+
+                </div>
+                <!--Grid row-->
+            <!--Grid row-->
+                <div class="row">
+
+                  <!-- Grid column -->
+                  <div class="col-1">
+                    <i class="fa fa-mail-forward fa-lg indigo-text"></i>
+                  </div>
+                  <!-- Grid column -->
+                  <!-- Grid column -->
+                  <div class="col-xl-10 col-md-11 col-10">
+                    <h5 class="font-weight-bold mb-3">Dificil</h5>
+                     <label class="switch dificultad">
+                     <input type="checkbox" name="">
+                     <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!--Grid row-->
+              </div>
+              <!--Grid column-->
+              </th>
+              <th>       <!-- Grid column -->
+          <div class="select_box">
+              <!-- Grid column -->
+              <div class="col-lg-7">
+
+                <!-- Grid row -->
+                <div class="row mb-3">
+
+                  <!-- Grid column -->
+                  <div class="col-1">
+                    <i class="fa fa-mail-forward fa-lg indigo-text"></i>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-xl-10 col-md-11 col-10">
+                    <h5 class="font-weight-bold mb-3">Todas</h5>
+                    
+                    <!--inicio-->
+                    <label class="switch">
+                     <input type="checkbox" name="">
+                     <span class="slider round"></span>
+                    </label>
+              
+
+                  </div>
+                  <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+                <!-- Grid row -->
+                <div class="row mb-3">
+
+                  <!-- Grid column -->
+                  <div class="col-1">
+                    <i class="fa fa-mail-forward fa-lg indigo-text"></i>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-xl-10 col-md-11 col-10">
+                    <h5 class="font-weight-bold mb-3">Baja</h5>
+                   
+                     <label class="switch">
+                     <input type="checkbox" name="">
+                     <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+                <!--Grid row-->
+                <div class="row">
+
+                  <!-- Grid column -->
+                  <div class="col-1">
+                    <i class="fa fa-mail-forward fa-lg indigo-text"></i>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-xl-10 col-md-11 col-10">
+                    <h5 class="font-weight-bold mb-3">Media</h5>
+                   
+                     <label class="switch">
+                     <input type="checkbox" name="">
+                     <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <!-- Grid column -->
+
+                </div>
+                <!--Grid row-->
+            <!--Grid row-->
+                <div class="row">
+
+                  <!-- Grid column -->
+                  <div class="col-1">
+                    <i class="fa fa-mail-forward fa-lg indigo-text"></i>
+                  </div>
+                  <!-- Grid column -->
+                  <!-- Grid column -->
+                  <div class="col-xl-10 col-md-11 col-10">
+                    <h5 class="font-weight-bold mb-3">Dificil</h5>
+                     <label class="switch dificultad">
+                     <input type="checkbox" name="">
+                     <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!--Grid row-->
+              </div>
+              <!--Grid column--></th>
+            </tr>
+          </thead>
+        </table>  
+          <!-- Section: Features v.3 -->
+          <section class="my-5">
 
 
-  <!-- Grid row -->
-  <div class="row">
-
-    <!-- Grid column -->
-    <div class="col-lg-5 text-center text-lg-left content">
-
-      <center>
-       <br><br>
-      <img  class="img-fluid " src="../../img/perfil.png" style="width:20%;" alt="perfil">
-        <!-- Section heading -->
-      <h2 class="h1-responsive font-weight-bold text-center my-5"><?php echo $_SESSION['name']; ?></h2>
-
-  <!-- Section description -->
-      <p class="lead grey-text text-center w-responsive mx-auto mb-5"><?php echo $_SESSION['email']; ?></p>
-      </center>
-    </div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
-    <div class="col-lg-7">
-
-      <!-- Grid row -->
-      <div class="row mb-3">
-
-        <!-- Grid column -->
-        <div class="col-1">
-          <i class="fa fa-mail-forward fa-lg indigo-text"></i>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-xl-10 col-md-11 col-10">
-          <h5 class="font-weight-bold mb-3">Todas</h5>
-          <p class="grey-text">fcsdsdvs</p>
-          <!--inicio-->
-          <label class="switch">
-           <input type="checkbox" name="">
-           <span class="slider round"></span>
-           </label>
-    
-
-        </div>
-        <!-- Grid column -->
-
-      </div>
-      <!-- Grid row -->
-
-      <!-- Grid row -->
-      <div class="row mb-3">
-
-        <!-- Grid column -->
-        <div class="col-1">
-          <i class="fa fa-mail-forward fa-lg indigo-text"></i>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-xl-10 col-md-11 col-10">
-          <h5 class="font-weight-bold mb-3">Baja</h5>
-          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
-        </div>
-        <!-- Grid column -->
-
-      </div>
-      <!-- Grid row -->
-
-      <!--Grid row-->
-      <div class="row">
-
-        <!-- Grid column -->
-        <div class="col-1">
-          <i class="fa fa-mail-forward fa-lg indigo-text"></i>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-xl-10 col-md-11 col-10">
-          <h5 class="font-weight-bold mb-3">Media</h5>
-          <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
-        </div>
-        <!-- Grid column -->
-
-      </div>
-      <!--Grid row-->
-  <!--Grid row-->
-      <div class="row">
-
-        <!-- Grid column -->
-        <div class="col-1">
-          <i class="fa fa-mail-forward fa-lg indigo-text"></i>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-xl-10 col-md-11 col-10">
-          <h5 class="font-weight-bold mb-3">Dificil</h5>
-          <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
-        </div>
-        <!-- Grid column -->
-
-      </div>
-      <!--Grid row-->
-    </div>
-    <!--Grid column-->
-
-  </div>
-  <!-- Grid row -->
-
-</section>
-<!-- Section: Features v.3 -->
-            
-      </section>
-      
-
+          </div>
+          </section>
+          <!-- Section: Features v.3 -->              
+        </section>
     </div>
 
 
